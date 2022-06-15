@@ -86,4 +86,23 @@ article {
 
 footer {
   margin-top: auto;
+  background-color: var(--detail-color-bg) !important;
+  color: var(--detail-color) !important;
+}
+
+.table {
+  color: var(--bs-body-color);
+}
+
+:root {
+  --bs-body-bg: #1c1e21;
+  --bs-body-color: #fff;
+
+  --detail-color-bg: #1e1e1e;
+  --detail-color: #fff;
+}
+
+html[data-theme='light'] {
+  --detail-color-bg: #fff;
+  --detail-color: #1111;
 }

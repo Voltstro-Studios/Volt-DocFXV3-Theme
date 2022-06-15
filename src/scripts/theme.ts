@@ -3,11 +3,11 @@
 
 import cookie  from 'js-cookie'
 
-let theme = cookie.get('docfx.theme') || 'light';
+let theme = cookie.get('docfx.theme') || 'dark';
+let themeDataAttribute = 'data-theme';
 
 export function enableSwitchTheme() {
-  let getThemeClass = theme => `theme-${theme}`;
-  document.body.classList.add(getThemeClass(theme));
+  document.documentElement.setAttribute(themeDataAttribute, theme);
 
   let button = document.getElementById('switch-theme');
   if (!button) {
@@ -15,12 +15,10 @@ export function enableSwitchTheme() {
   }
 
   button.addEventListener('click', () => {
-    document.body.classList.remove(getThemeClass(theme));
-
     let targetTheme = theme === 'light' ? 'dark' : 'light';
 
     cookie.set('docfx.theme', targetTheme);
-    document.body.classList.add(getThemeClass(targetTheme));
+    document.documentElement.setAttribute(themeDataAttribute, targetTheme);
     theme = targetTheme;
   });
 }

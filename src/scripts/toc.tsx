@@ -69,7 +69,10 @@ export async function renderToc() {
 
       return (
         <li ref={li} class={activeClass}>
-          {isLeaf ? null : <i class='toggle' onClick={() => toggleTocNode(li.current)}></i>}
+          {isLeaf 
+            ? null 
+            : <i class='toggle' onClick={() => toggleTocNode(li.current)}><svg width={16} height={16} viewBox="0 0 16 16"><path fill='none' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6' /></svg></i>
+          }
           {href
             ? <a class={activeClass} href={href}>{name}</a>
             : <a class={activeClass} onClick={() => toggleTocNode(li.current)}>{name}</a>}
