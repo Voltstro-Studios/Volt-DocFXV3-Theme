@@ -1,0 +1,21 @@
+{
+  "name": "volt-docfxv3-theme",
+  "license": "MIT",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "sass": "^1.52.3",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.5",
+    "anchor-js": "^4.3.1",
+    "bootstrap": "^5.1.3",
+    "highlight.js": "^11.5.1",
+    "js-cookie": "^3.0.1",
+    "jsx-dom": "^8.0.1-beta.8"
+  }
+}
