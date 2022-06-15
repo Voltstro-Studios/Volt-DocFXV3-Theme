@@ -1,11 +1,14 @@
 // Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-/* TOC panel appearance */
-.layout-toc, .form-control, .form-control:focus {  
+/* Form Controls */
+.form-control, .form-control:focus {
   color: var(--bs-body-color);
-  background-color: var(--bs-body-bg);
+  background-color: var(--detail-second-color-bg);
+}
 
+/* TOC panel appearance */
+.layout-toc {
   .navbar-toggler {
     font-size: inherit;
     cursor: pointer;

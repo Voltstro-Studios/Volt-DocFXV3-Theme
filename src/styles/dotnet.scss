@@ -80,7 +80,7 @@ main.page-type-reference {
     margin: 0;
 
     dt {
-      background-color: rgb(242, 242, 242);
+      background-color: var(--detail-second-color-bg);
       padding: 0 6px 2px 6px;
       margin-right: 1em;
     }

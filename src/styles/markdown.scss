@@ -12,6 +12,10 @@ pre {
   border-radius: $border-radius
 }
 
+.hljs {
+  background-color: var(--detail-second-color-bg);
+}
+
 /* Alerts */
 .alert {
   border-radius: $border-radius;
