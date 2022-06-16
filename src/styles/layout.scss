@@ -90,6 +90,10 @@ footer {
   color: var(--detail-color) !important;
 }
 
+footer>.container-xxl {
+  display: flex;
+}
+
 .table {
   color: var(--bs-body-color);
 }
