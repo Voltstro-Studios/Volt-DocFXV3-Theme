@@ -48,3 +48,4 @@ copyFolderRecursiveSync("dist/", "build/");
 copyFolderRecursiveSync("ContentTemplate/", "build/");
 copyFolderRecursiveSync("_includes/", "build/");
 copyFileSync("template.yml", "build/")
+copyFileSync("LICENSE", "build/")
