@@ -49,3 +49,6 @@ copyFolderRecursiveSync("ContentTemplate/", "build/");
 copyFolderRecursiveSync("_includes/", "build/");
 copyFileSync("template.yml", "build/")
 copyFileSync("LICENSE", "build/")
+copyFileSync("Conceptual.html.liquid", "build/")
+copyFileSync("Home.html.liquid", "build/")
+copyFileSync("Reference.html.liquid", "build/")
