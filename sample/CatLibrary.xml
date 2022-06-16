@@ -258,6 +258,11 @@
             </summary>
             <param name="k"></param>
         </member>
+        <member name="T:CatLibrary.Bob">
+            <summary>
+            This is <see cref="T:CatLibrary.Bob" />, he likes to eat <see cref="T:System.Type" />s
+            </summary>
+        </member>
         <member name="T:CatLibrary.ICatExtension">
             <summary>
             It's the class that contains ICat interface's extension method.
