@@ -37,6 +37,12 @@ header {
   }
 }
 
+.navbar-toggler, .navbar-toggler:before {
+  color: #ffffff8c !important;
+  border-color: #ffffff1a !important;
+  fill: #ffffff1a;
+}
+
 footer {
   background-color: #f8f8f8;
   padding: 2rem 0;
