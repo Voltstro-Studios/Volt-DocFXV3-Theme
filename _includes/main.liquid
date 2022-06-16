@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   {{metadata}}
 
-  <title>{{ page.title }}</title>
+  {%- if page.title == null -%}
+    <title>{{ page._appTitle }}</title>
+  {%- else -%}  
+    <title>{{ page.title }} | {{ page._appTitle }}</title>
+  {%- endif -%}
 
   <link rel="stylesheet" href="{{ page._rel }}dist/main.css">
 </head>
