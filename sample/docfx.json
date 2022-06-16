@@ -1,0 +1,16 @@
+{
+  "template": "../",
+  "globalMetadata": {
+    "_appTitle": "Volt-DocfxV3-Theme",
+    "_appFooter": "Copyright (c) 2022 Voltstro-Studios",
+    "menu_path": "menu.yml"
+  },
+  "dotnet": {
+    "assemblies": [
+      "CatLibrary.dll"
+    ]
+  },
+  "xref": [
+    "https://docs.microsoft.com/en-us/dotnet/.xrefmap.json"
+  ]
+}
