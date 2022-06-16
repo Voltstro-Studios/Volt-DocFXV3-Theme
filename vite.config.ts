@@ -6,14 +6,13 @@ export default defineConfig(({command, mode}) => {
   let config: UserConfig = {
     build: {
       rollupOptions: {
-        inlineDynamicImports: true,
         input: {
             main: resolve(__dirname, 'src/main.ts')
         },
         output: {
-            manualChunks: () => 'docfx',
             entryFileNames: () => 'docfx.js',
-            assetFileNames: () => '[name][extname]'
+            assetFileNames: () => '[name][extname]',
+            sourcemap: false
         },
       },
     },

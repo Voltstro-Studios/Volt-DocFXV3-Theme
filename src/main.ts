@@ -4,7 +4,8 @@
  * Copyright (c) 2022 Voltstro-Studios
  * Copyright (c) 2020 docfx
  */
-import 'bootstrap'
+import 'bootstrap/js/dist/collapse'
+
 import { enableAnchor } from './scripts/anchor'
 import { highlight } from './scripts/highlight'
 import { renderAlerts, renderLinks, renderTables, renderTabs } from './scripts/markdown'
