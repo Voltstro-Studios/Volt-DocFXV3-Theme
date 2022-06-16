@@ -28,7 +28,7 @@
             {%- if contributor.profile_url and contributor.profile_url.size > 0 -%}
               <li>
                 <a href="{{ contributor.profile_url }}" title="{{ contributor.display_name }}">
-                  <img src="{{ contributor.profile_url }}.png?size=32" role="presentation"/>
+                  <img width=32 src="{{ contributor.profile_url }}.png?size=128" role="presentation"/>
                 </a>
               </li>
             {%- endif -%}

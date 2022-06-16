@@ -1,5 +1,6 @@
 {
   "template": "../",
+  "defaultLocale": "en-au",
   "globalMetadata": {
     "_appTitle": "Volt-DocfxV3-Theme",
     "_appFooter": "Copyright (c) 2022 Voltstro-Studios",
