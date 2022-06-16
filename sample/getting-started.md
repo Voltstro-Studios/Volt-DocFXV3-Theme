@@ -4,6 +4,8 @@ title: Getting Started
 
 # Getting Started
 
+Hello world!
+
 ## Installation
 
 Add an introduction here using [markdown](http://daringfireball.net/projects/markdown/).

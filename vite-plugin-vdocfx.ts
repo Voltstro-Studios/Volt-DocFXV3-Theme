@@ -6,8 +6,8 @@ import { spawnSync } from 'child_process'
 export default function viteVDocfx(): Plugin {
     return {
         name: 'vite-plugin-vdocfx',
-        buildEnd() {
-          exec('docfx build sample/')
+        writeBundle() {
+          exec('docfx build sample/ --no-cache')
         }
     }
 } 

@@ -3,7 +3,7 @@
 
 /* base */
 :not(a):not(pre)>code {
-  background-color: rgb(249, 242, 244);
+  background-color: var(--detail-second-color-bg);
   padding: .2em .4em;
 }
 
