@@ -1,13 +1,19 @@
 <ul class="metabar">
-  <li>
-    <time datetime="{{ page._op_gitContributorInformation.update_at }}">{{ page._op_gitContributorInformation.update_at }}</time>
-  </li>
-  {%- if page.wordCount < 400 -%}
-    {%- capture minToRead %}2{% endcapture -%}
-  {%- else -%}
-    {%- capture minToRead %}{{ page.wordCount  | divided_by: 200 | round }}{% endcapture -%}
-  {%- endif -%}
-  <li class="readingTime">{{ minToRead}} minutes to read</li>
+  {%- unless page.disableUpdateTime -%}
+    <li>
+      <time datetime="{{ page._op_gitContributorInformation.update_at }}">{{ page._op_gitContributorInformation.update_at }}</time>
+    </li>
+  {%- endunless -%}
+
+  {%- unless page.disableReadingTime -%}
+    {%- if page.wordCount < 400 -%}
+      {%- capture minToRead %}2{% endcapture -%}
+    {%- else -%}
+      {%- capture minToRead %}{{ page.wordCount  | divided_by: 200 | round }}{% endcapture -%}
+    {%- endif -%}
+    <li class="readingTime">{{ minToRead}} minutes to read</li>
+  {%- endunless -%}
+
   {%- if page._op_gitContributorInformation.contributors and page._op_gitContributorInformation.contributors.size > 0 -%}
     {%- assign contributorMax = 5 -%}
     {%- assign contributorSize = page._op_gitContributorInformation.contributors.size -%}

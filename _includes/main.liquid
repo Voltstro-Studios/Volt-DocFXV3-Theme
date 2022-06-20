@@ -27,13 +27,15 @@
         <nav class="layout-breadcrumb" id="breadcrumb" aria-label="breadcrumb"></nav>
       {%- endunless -%}
 
-      <nav class="layout-toc">
-        {%- include toc -%}
-      </nav>
+      {%- unless page.disableToc -%}
+        <nav class="layout-toc">
+          {%- include toc -%}
+        </nav>
+      {%- endunless -%}
 
       <article>
         {{ heading1 }}
-        {%- unless disableMetabar -%}
+        {%- unless page.disableMetabar -%}
           {%- include metabar -%}
         {%- endunless -%}
 
