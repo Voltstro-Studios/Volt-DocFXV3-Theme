@@ -5,7 +5,7 @@
   "scripts": {
     "start": "tsc && vite build --watch --mode development",
     "build": "tsc && vite build",
-    "prepare": "ts-node -T prepare-build.ts"
+    "copy": "ts-node -T prepare-build.ts"
   },
   "devDependencies": {
     "sass": "^1.52.3",
