@@ -1,5 +1,6 @@
 import { defineConfig, UserConfig } from 'vite'
 import { resolve } from 'path'
+import {terser} from 'rollup-plugin-terser'
 import viteVDocfx from './vite-plugin-vdocfx'
 
 export default defineConfig(({command, mode}) => {
@@ -24,6 +25,19 @@ export default defineConfig(({command, mode}) => {
 
   if(mode == 'development') {
     config.plugins = [viteVDocfx()]
+  }
+  else {
+    config.build.rollupOptions.plugins = [terser({
+      format: {
+          comments: false
+      },
+      compress: {
+          defaults: true,
+          drop_console: true,
+          drop_debugger: true
+      },
+      ecma: 2020
+    })]
   }
 
   return config;
