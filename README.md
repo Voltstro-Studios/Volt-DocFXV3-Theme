@@ -1,6 +1,7 @@
 # Volt-DocFXv3-Theme
 
 [![License](https://img.shields.io/github/license/Voltstro-Studios/Volt-DocFXV3-Theme.svg)](/LICENSE)
+[![Build](https://github.com/Voltstro-Studios/Volt-DocFXV3-Theme/actions/workflows/main.yml/badge.svg)](https://github.com/Voltstro-Studios/Volt-DocFXV3-Theme/actions/workflows/main.yml)
 [![Discord](https://img.shields.io/badge/Discord-Voltstro-7289da.svg?logo=discord)](https://discord.voltstro.dev) 
 [![YouTube](https://img.shields.io/badge/Youtube-Voltstro-red.svg?logo=youtube)](https://www.youtube.com/Voltstro)
 
@@ -53,7 +54,7 @@ Please ensure that you are using DocFX v3 beta, and have it installed globally! 
 
 1. Run `yarn` in project root.
 2. Run `yarn run start` to start the development environment.
-3. When ready, run `yarn run build` and `yarn run prepare`. This will place your built template into `build/`.
+3. When ready, run `yarn run build` and `yarn run copy`. This will place your built template into `build/`.
 
 ## License
 
