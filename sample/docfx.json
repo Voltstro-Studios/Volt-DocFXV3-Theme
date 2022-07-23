@@ -7,11 +7,25 @@
     "_appFooterIcon": "assets/vs-icon.png",
     "menu_path": "menu.yml"
   },
+  "hostName": "https://projects.voltstro.dev",
+  "basePath": "Volt-DocFXV3-Theme",
   "dotnet": {
     "assemblies": [
       "CatLibrary.dll"
     ]
   },
+  "files": [
+    "**",
+    "../README.md"
+  ],
+  "additionalFiles": [
+    "../README.md"
+  ],
+  "exclude": [
+    "*.dll",
+    "*.xml",
+    "obj/"
+  ],
   "xref": [
     "https://docs.microsoft.com/en-us/dotnet/.xrefmap.json"
   ]
