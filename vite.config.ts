@@ -1,11 +1,12 @@
 import { defineConfig, UserConfig } from 'vite'
 import { resolve } from 'path'
-import {terser} from 'rollup-plugin-terser'
 import viteVDocfx from './vite-plugin-vdocfx'
 
 export default defineConfig(({command, mode}) => {
   let config: UserConfig = {
     build: {
+      //No minify in dev builds, speeds shit up
+      minify: false,
       rollupOptions: {
         input: {
             main: resolve(__dirname, 'src/main.ts')
@@ -27,17 +28,20 @@ export default defineConfig(({command, mode}) => {
     config.plugins = [viteVDocfx()]
   }
   else {
-    config.build.rollupOptions.plugins = [terser({
-      format: {
-          comments: false
-      },
-      compress: {
-          defaults: true,
-          drop_console: true,
-          drop_debugger: true
-      },
-      ecma: 2020
-    })]
+    //In non-dev builds, we will use terser to minify everything
+    console.log('Non-dev build, using terser...')
+    config.build!.minify = 'terser';
+    config.build!.terserOptions = {
+        format: {
+            comments: false
+        },
+        compress: {
+            defaults: true,
+            drop_console: true,
+            drop_debugger: true
+        },
+        ecma: 2020
+    };
   }
 
   return config;
