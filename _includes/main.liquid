@@ -35,7 +35,7 @@
 
       <article>
         {{ heading1 }}
-        {%- unless disableMetabar -%}
+        {%- unless page.disableMetabar or disableMetabar -%}
           {%- include metabar -%}
         {%- endunless -%}
 
