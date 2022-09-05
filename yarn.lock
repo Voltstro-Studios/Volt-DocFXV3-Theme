@@ -370,10 +370,10 @@ js-cookie@^3.0.1:
   resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-3.0.1.tgz#9e39b4c6c2f56563708d7d31f6f5f21873a92414"
   integrity sha512-+0rgsUXZu4ncpPxRL+lNEptWMOWl9etvPHc/koSRp6MPwpRYAhmk0dUG00J4bxVV3r9uUzfo24wW0knS07SKSw==
 
-jsx-dom@^8.0.1-beta.9:
-  version "8.0.1-beta.9"
-  resolved "https://registry.yarnpkg.com/jsx-dom/-/jsx-dom-8.0.1-beta.9.tgz#c9826b11f2d54bb52d010651c7ecd9ee9c7bbcd8"
-  integrity sha512-gxQMgKrlelMlUAp32kn7wAQGbaHPkoDQ3ba+HbY9gOCfhTJhdgvq+qZF1q+LNzhHAk1N5WDhTx+V+6AvlV4a4Q==
+jsx-dom@^8.0.2:
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/jsx-dom/-/jsx-dom-8.0.2.tgz#04b90bc1ddcf2a9e04548d3d4068c51b1965a81d"
+  integrity sha512-mljC3+b2GloIHcjT0CcDYx5K+UcalyrYCqxVbtY6JZ/BZMrcJbeSGndE9lQhzSCIVH0rphUyDg+e2j6FHMx4Bg==
   dependencies:
     csstype "^3.1.0"
 
