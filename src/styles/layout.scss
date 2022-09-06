@@ -35,7 +35,7 @@ main.layout-conceptual {
  display: grid;
  margin-top: 1em;
  gap: .5em 2em;
- grid-template-columns: minmax(16em, 20%) minmax(0, 1fr) minmax(12em, 15%);
+ grid-template-columns: minmax(20em, auto) minmax(0, 1fr) minmax(12em, 15%);
  grid-template-rows: auto auto;
  grid-template-areas:
   'toc article aside';
