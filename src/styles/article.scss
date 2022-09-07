@@ -33,11 +33,9 @@
 
 /* Edit this page */
 .edit-this-page {
-  display: flex;
-  align-items: center;
-  gap: .5em;
-  font-size: 14px;
-  margin-top: 4em;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  color: var(--bs-nav-link-color);
+  padding-bottom: 1em;
 
   @media print {
     display: none;
