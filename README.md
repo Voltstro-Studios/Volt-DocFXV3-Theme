@@ -5,6 +5,10 @@
 [![Discord](https://img.shields.io/badge/Discord-Voltstro-7289da.svg?logo=discord)](https://discord.voltstro.dev) 
 [![YouTube](https://img.shields.io/badge/Youtube-Voltstro-red.svg?logo=youtube)](https://www.youtube.com/Voltstro)
 
+> :warning: NOTICE: There has been a sudden change in heart towards the docfx project from the docfx team, they have decided that it is best to focus on v2 (finally!) and fix it up. So we now no longer need this theme, as we will be going back to v2 docfx.
+> 
+> This project is now archived.
+
 Voltstro's DocFX v3 theme. Based off DocFX's [official theme](https://github.com/docascode/template).
 
 ## Features
